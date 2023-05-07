@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Question 5
+// Question 6
 int main() {
     int size;
     printf("Enter array size: ");
@@ -14,6 +14,7 @@ int main() {
 
     int c = 0;
 
+    printf("The unique elements are: ");
     for(int i = 0; i < size; i++) {
         int count = 0;
         for(int k = 0; k < size; k++) {
@@ -25,14 +26,13 @@ int main() {
                 continue;
             }
         }
-        if(count + 1 == 2 && arr[i] != 0) {
-            c = c + 1;
+        if(count + 1 == 1 && arr[i] != 0) {
+            printf("%d ", arr[i]);
         }
         else {
             continue;
         }
     }
-    printf("The total number of duplicate elements are: %d", c);
 
     return 0;
 
