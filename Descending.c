@@ -18,7 +18,7 @@ int main() {
     }
     // Sorting Loop
     for(int i = 1; i <= s; i++) {
-        for(int j = 0; j < size; j++) {
+        for(int j = 0; j < (size-1); j++) {
             if(arr[j] < arr[j+1]) {
                 int c = arr[j+1];
                 arr[j+1] = arr[j];
